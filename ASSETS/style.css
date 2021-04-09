@@ -21,21 +21,19 @@ body{
     margin-bottom: 10px;
 }
 
-.col_lg_4{
-    display: flex;
-    align-items: center;
-}
-.col_lg_4 span{
+.left_nav span{
     color: rgba(42, 137, 253, 1);
     font-size: 20px;
     margin-left: 4px;
 }
-.col_lg_4 img{
+.left_nav img{
     height: 35px;
 }
 
 .left_nav{
     width: 25%;
+    display: flex;
+    align-items: center;
 }
 
 .center_nav{
@@ -259,12 +257,14 @@ and (max-width: 991px){
 
 
 /* MAIN */
+/* LOGHI */
 .block_logos{
     width: 100%;
-    height: 200px;
     background-color: rgba(243, 245, 249, 1);
     text-align: center;
     line-height: 50px;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 .logos_title{
@@ -276,7 +276,6 @@ and (max-width: 991px){
 
 .logos{
     width: 100%;
-    height: 90px;
 }
 
 .logos img{
@@ -291,4 +290,52 @@ and (max-width: 991px){
     text-decoration: none;
     color: rgba(58, 137, 253, 1);
     padding-bottom: 20px;
+}
+/* /LOGHI */
+
+.title_three_columns{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.title_three_columns h2{
+    color: rgba(3, 28, 78, 1);
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.title_three_columns p{
+    color: rgba(92, 106, 136, 1);
+    font-size: 23px;
+}
+
+.three_columns .col_lg_4 ul{
+    display: block;
+    border-left: 2px solid rgba(210, 210, 210, 1);
+    margin-left: 100px;
+}
+
+.three_columns .col_lg_4 ul li{
+    color: rgba(119, 130, 155, 1);
+    line-height: 30px;
+}
+
+.three_columns .col_lg_4 img{
+    margin-bottom: 10px;
+}
+
+.three_columns .col_lg_4 h5{
+    margin-bottom: 7px;
+    color: rgba(49, 68, 108, 1);
+    font-size: 21px;
+}
+
+.three_columns .col_lg_4 p{
+    width: 90%;
+    margin-bottom: 25px;
+    color: rgba(95, 109, 138, 1);
+    font-size: 18px;
+}
+
+.right_bottom{
+    margin-top: 47px;
 }
