@@ -293,6 +293,7 @@ and (max-width: 991px){
 }
 /* /LOGHI */
 
+/* TRE COLONNE */
 .title_three_columns{
     text-align: center;
     margin-bottom: 60px;
@@ -306,6 +307,10 @@ and (max-width: 991px){
 .title_three_columns p{
     color: rgba(92, 106, 136, 1);
     font-size: 23px;
+}
+
+.three_columns{
+    height: 400px;/* Chiedere e rimuovere questo */
 }
 
 .three_columns .col_lg_4 ul{
@@ -339,3 +344,64 @@ and (max-width: 991px){
 .right_bottom{
     margin-top: 47px;
 }
+/* /TRE COLONNE */
+
+.slider{
+    width: 100%;
+    background-color: rgba(243, 245, 249, 1);
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.title_slider{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.title_slider h2{
+    color: rgba(3, 28, 78, 1);
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.title_slider p{
+    color: rgba(92, 106, 136, 1);
+    font-size: 23px;
+}
+
+.img_slider{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.img_slider img{
+    height: 345px;
+    margin-top: 10px;
+}
+
+.slider h3{
+    text-align: center;
+    color: rgba(31, 52, 96, 1);
+    margin-bottom: 10px;
+}
+
+.pallini{
+    display: flex;
+    justify-content: center;
+}
+.pallini div{
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border: 1px solid rgba(0, 106, 255, 1);
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.pallini div:first-child{
+    background-color: rgba(0, 106, 255, 1);
+}
+
+
+
