@@ -1,43 +1,61 @@
-
-
+/* GENERAL RULES */
 body{
     background-color: white;
+    font-family: 'Inter-Medium','Helvetica','san-serif';
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .container{
     /* background-color: aqua; */
+    width: 75%;
+    margin: auto;
 }
+/* /GENERAL RULES */
 
 .col_lg_4{
     display: flex;
     /* background-color: red; */
-    justify-content: center;
     align-items: center;
+}
+.col_lg_4 span{
+    color: rgba(42, 137, 253, 1);
+    font-size: 20px;
+    margin-left: 4px;
+}
+.col_lg_4 img{
+    height: 35px;
+}
+
+.left_nav{
+    width: 25%;
+}
+
+.center_nav{
+    width: 45%;
+}
+
+.right_nav{
+    justify-content: flex-end;
+    width: 30%;
 }
 
 .blue_text{
     color: rgba(31, 53, 96, 1);
-}
-
-.col_lg_4 span{
-    color: rgba(42, 137, 253, 1);
-    font-size: 17px;
-    margin: 9px;
-}
-
-.col_lg_4 img{
-    height: 20px;
+    font-size: 15px;
 }
 
 ul{
     list-style: none;
     display: flex;
 }
-
 ul>li{
     margin: 10px;
 }
-
 ul>li>a{
     color: rgba(75, 150, 255, 1);
     text-decoration: none;
@@ -45,7 +63,143 @@ ul>li>a{
     padding: 8px 12px 8px 12px;
     border-radius: 3px;
 }
-
 .fa-chevron-down:before {
     padding: 5px;
 }
+
+/* BANNER */
+.header_banner{
+    height: 500px;
+    width: 100%;
+    background-image: url('../img/bg-banner-home.jpg');
+    background-size: cover;
+    background-position: right bottom;
+}
+
+.col_lg_6{
+    height: 100%;
+}
+
+.left_banner{
+    width: 50%;
+    margin-right: 4%;
+}
+
+.right_banner{
+    width: 45%;
+}
+
+/* LEFT BANNER */
+.title{
+    margin-top: 75px;
+}
+.col_lg_6 h1{
+    color: white;
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+.col_lg_6 p{
+    color: rgba(181, 199, 253, 1);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+/* /LEFT BANNER */
+
+/* RIGHT BANNER */
+.form{
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 50px;
+    padding-top: 45px;
+}
+
+.form h2{
+    text-align: center;
+    color: rgba(3, 28, 78, 1);
+    font-size: 30px;
+}
+
+.form h2:last-child{
+    color: rgba(0, 106, 255, 1);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form span{
+    width: 93%;
+    margin: auto;
+    display: block;
+    padding: 8px 5px;
+    margin-bottom: 10px;
+    border: 2px solid rgba(244, 244, 244, 1);
+    border-radius: 5px;
+    color: rgba(131, 131, 131, 1);
+    font-weight: 500;
+}
+
+.button_blue a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 93%;
+    margin: auto;
+    margin-bottom: 8px;
+    padding: 12px 5px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba(87, 154, 255, 1);
+    color: white;
+}
+
+.button_white{
+    color: black;
+    width: 93%;
+    margin: auto;
+    margin-bottom: 8px;
+    padding: 6px 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(235, 235, 235, 1);
+    text-align: center;
+}
+
+.button_white a{
+    text-decoration: none;
+    color: rgba(119, 119, 119, 1);
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.button_white_left{
+    width: 10%;
+    height: 100%;
+    float: left;
+}
+
+.button_white_right{
+    width: 80%;
+    height: 100%;
+    float: left;
+}
+
+.form p{
+    text-align: center;
+    font-size: 14px;
+    color: rgba(67, 85, 122, 1);
+    font-weight: 600;
+    margin-top: 10px;
+    padding-bottom: 25px;
+}
+
+.form img{
+    height: 23px;
+    text-align: left;
+}
+
+.form p a{
+    color: rgba(21, 120, 255, 1);
+}
+/* RIGHT BANNER */
+/* /HEADER */
+
