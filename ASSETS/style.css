@@ -11,15 +11,18 @@ body{
 }
 
 .container{
-    /* background-color: aqua; */
     width: 75%;
     margin: auto;
 }
 /* /GENERAL RULES */
 
+.nav{
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
 .col_lg_4{
     display: flex;
-    /* background-color: red; */
     align-items: center;
 }
 .col_lg_4 span{
@@ -44,9 +47,14 @@ body{
     width: 30%;
 }
 
+.menu{
+    display: none;
+}
+
 .blue_text{
     color: rgba(31, 53, 96, 1);
     font-size: 15px;
+    font-weight: 600;
 }
 
 ul{
@@ -69,15 +77,11 @@ ul>li>a{
 
 /* BANNER */
 .header_banner{
-    height: 500px;
     width: 100%;
     background-image: url('../img/bg-banner-home.jpg');
     background-size: cover;
-    background-position: right bottom;
-}
-
-.col_lg_6{
-    height: 100%;
+    background-position: center ;
+    padding-bottom: 70px;
 }
 
 .left_banner{
@@ -93,12 +97,12 @@ ul>li>a{
 .title{
     margin-top: 75px;
 }
-.col_lg_6 h1{
+.title h1{
     color: white;
     font-size: 55px;
     margin-bottom: 15px;
 }
-.col_lg_6 p{
+.title p{
     color: rgba(181, 199, 253, 1);
     font-weight: 400;
     font-size: 20px;
@@ -128,7 +132,7 @@ ul>li>a{
 }
 
 .form span{
-    width: 93%;
+    width: 90%;
     margin: auto;
     display: block;
     padding: 8px 5px;
@@ -143,7 +147,7 @@ ul>li>a{
     text-decoration: none;
     color: black;
     display: block;
-    width: 93%;
+    width: 90%;
     margin: auto;
     margin-bottom: 8px;
     padding: 12px 5px;
@@ -155,7 +159,7 @@ ul>li>a{
 
 .button_white{
     color: black;
-    width: 93%;
+    width: 90%;
     margin: auto;
     margin-bottom: 8px;
     padding: 6px 5px;
@@ -185,6 +189,8 @@ ul>li>a{
 
 .form p{
     text-align: center;
+    width: 90%;
+    margin: auto;
     font-size: 14px;
     color: rgba(67, 85, 122, 1);
     font-weight: 600;
@@ -201,5 +207,56 @@ ul>li>a{
     color: rgba(21, 120, 255, 1);
 }
 /* RIGHT BANNER */
+
+/* HEADER TABLER VERSION */
+@media screen and (min-width:768px) 
+and (max-width: 991px){
+
+    .menu{
+        display: block;
+    }
+
+    .center_nav, .right_nav{
+        display: none;
+    }
+
+    .col_lg_6 h1{
+        font-size: 32px;
+    }
+}
+/* HEADER TABLER VERSION */
+
+/* HEADER SMARTPHONE VERSION */
+@media screen and (max-width:767px){
+    .menu{
+        display: block;
+    }
+
+    .center_nav, .right_nav{
+        display: none;
+    }
+    .title h1{
+        font-size: 40px;
+    }
+
+    .title p{
+        font-size: 24px;
+    }
+    .left_banner{
+        width: 100%;
+    }
+    .right_banner{
+        width: 100%;
+    }
+
+    .form{
+        margin-top: 15px;
+    }
+
+}
+/* HEADER TABLER VERSION */
+
+
+
 /* /HEADER */
 
