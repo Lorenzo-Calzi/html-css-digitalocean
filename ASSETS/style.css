@@ -461,7 +461,7 @@ and (max-width: 991px){
 
 /* 12 REGIONS */
 .regions{
-    height: 500px;
+    height: 400px;
     width: 100%;
     background: linear-gradient(180deg, #0045C3 0%, #00219D 100%);
 }
@@ -470,7 +470,7 @@ and (max-width: 991px){
     text-align: center;
     color: white;
     font-size: 30px;
-    padding-top: 60px;
+    padding-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -494,3 +494,48 @@ and (max-width: 991px){
     text-decoration: none;
     color: rgba(0, 203, 206, 1);
 }
+
+.travel:last-child{
+    border-bottom: none;
+}
+
+.second_slider{
+    background-color: white;
+    width: 50%;
+    margin: auto;
+}
+
+.img_rocker img{
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.second{
+    flex-direction: column;
+    align-items: center;
+}
+
+.second p{
+    color: rgba(95, 108, 138, 1);
+    text-align: center;
+    width: 80%;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+.second h5{
+    color: rgba(3, 28, 78, 1);
+    margin-bottom: 5px;
+}
+
+.second span{
+    color: rgba(56, 74, 113, 1);
+    margin-bottom: 20px;
+}
+
+.second a{
+    text-decoration: none;
+    color: rgba(34, 124, 255, 1);
+}
+
+
