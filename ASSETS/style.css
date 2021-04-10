@@ -18,7 +18,7 @@ body{
 
 .nav{
     padding-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .left_nav span{
@@ -27,7 +27,7 @@ body{
     margin-left: 4px;
 }
 .left_nav img{
-    height: 35px;
+    height: 30px;
 }
 
 .left_nav{
@@ -271,7 +271,7 @@ and (max-width: 991px){
     width: 100%;
     text-transform: uppercase;
     color: rgba(125, 136, 161, 1);
-    margin-top: 25px;
+    padding-top: 25px;
 }
 
 .logos{
@@ -279,7 +279,7 @@ and (max-width: 991px){
 }
 
 .logos img{
-    height: 80px;
+    height: 80px;  
 }
 
 .logos_link{
@@ -290,6 +290,7 @@ and (max-width: 991px){
     text-decoration: none;
     color: rgba(58, 137, 253, 1);
     padding-bottom: 20px;
+    font-weight: 600;
 }
 /* /LOGHI */
 
@@ -310,7 +311,7 @@ and (max-width: 991px){
 }
 
 .three_columns{
-    height: 400px;/* Chiedere e rimuovere questo */
+    height: 570px;/* Chiedere e rimuovere questo */
 }
 
 .three_columns .col_lg_4 ul{
@@ -344,8 +345,10 @@ and (max-width: 991px){
 .right_bottom{
     margin-top: 47px;
 }
+
 /* /TRE COLONNE */
 
+/* SLIDER */
 .slider{
     width: 100%;
     background-color: rgba(243, 245, 249, 1);
@@ -366,6 +369,24 @@ and (max-width: 991px){
 .title_slider p{
     color: rgba(92, 106, 136, 1);
     font-size: 23px;
+}
+
+.prev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    font-size: 45px;
+    color: rgba(111, 123, 151, 1);
+}
+
+.next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    font-size: 45px;
+    color: rgba(3, 28, 78, 1);
 }
 
 .img_slider{
@@ -402,6 +423,33 @@ and (max-width: 991px){
 .pallini div:first-child{
     background-color: rgba(0, 106, 255, 1);
 }
+/* /SLIDER */
 
+/* FEATURES */
+.features h1{
+    text-align: center;
+    color: rgba(3, 28, 78, 1);
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
 
+.features img{
+    margin-bottom: 15px;
+}
+
+.features h4{
+    color: rgba(3, 28, 78, 1);
+    margin-bottom: 10px;
+}
+
+.features p{
+    width: 90%;
+    color: rgba(106, 119, 146, 1);
+    margin-bottom: 10px;
+}
+
+.features a{
+    text-decoration: none;
+    color: rgba(9, 111, 255, 1);
+}
 
