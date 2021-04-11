@@ -498,44 +498,117 @@ and (max-width: 991px){
 .travel:last-child{
     border-bottom: none;
 }
+/* /12 REGIONS */
+
+/* SECOND SLIDER */
+.background_slider{
+    width: 100%;
+    background-color: rgba(243, 245, 249, 1);
+    padding-bottom: 50px;
+}
+
+.title_second_slider{
+    margin-top: 50px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.title_second_slider h2{
+    color: rgba(3, 28, 78, 1);
+    margin-bottom: 10px;
+    font-size: 32px;
+}
 
 .second_slider{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev_second{
+    margin-right: 30px;
+    font-size: 45px;
+    color: rgba(111, 123, 151, 1);
+}
+
+.next_second{
+    margin-left: 30px;
+    font-size: 45px;
+    color: rgba(3, 28, 78, 1);
+}
+
+.img_second_slider{
+    width: 40%;
     background-color: white;
-    width: 50%;
-    margin: auto;
+    text-align: center;
+    padding-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .img_rocker img{
     height: 30px;
-    margin-bottom: 10px;
+    margin-top: 60px;
+    margin-bottom: 20px; 
 }
 
-.second{
+.img_second_slider p{
+    color: rgba(95, 108, 138, 1);
+    text-align: center;
+    font-size: 20px;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+
+.img_second_slider h5{
+    color: rgba(3, 28, 78, 1);
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.img_second_slider span{
+    color: rgba(17, 40, 88, 1);
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+}
+
+.img_second_slider a{
+    text-decoration: none;
+    color: rgba(34, 124, 255, 1);
+    font-weight: 600;
+}
+/* /SECOND SLIDER */
+
+/* ACCOUNT */
+.background_account{
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    background: linear-gradient(180deg, #0041BB 0%, #00219C 100%);
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.second p{
-    color: rgba(95, 108, 138, 1);
-    text-align: center;
-    width: 80%;
-    margin-bottom: 10px;
-    line-height: 20px;
+.background_account h2{
+    font-size: 35px;
+    color: white;
+    margin-bottom: 25px;
 }
 
-.second h5{
-    color: rgba(3, 28, 78, 1);
-    margin-bottom: 5px;
-}
-
-.second span{
-    color: rgba(56, 74, 113, 1);
-    margin-bottom: 20px;
-}
-
-.second a{
+.background_account a{
     text-decoration: none;
-    color: rgba(34, 124, 255, 1);
+    font-size: 17px;
+    font-weight: 600;
+    color: rgba(23, 120, 255, 1);
+    padding: 10px 15px 10px 15px;
+    background-color: white;
+    border-radius: 4px;
 }
-
-
+/* /ACCOUNT */
