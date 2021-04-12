@@ -86,6 +86,7 @@ body{
 
 .menu{
     display: none;
+    color: rgba(61, 140, 255, 1);
 }
 
 /* BANNER */
@@ -391,6 +392,18 @@ and (max-width: 991px){
     .three_columns_list{
         width: 100%;
     } 
+    .three_columns_list ul li{
+        font-size: 22px;
+        padding: 10px;
+    }
+    .title_three_columns p{
+        font-size: 22px;
+    }
+
+    .three_columns .col_md_4 p{
+        font-size: 17px;
+        line-height: 23px;
+    }
 }
 /* /LIST TABLET VERSION */
 
@@ -488,9 +501,23 @@ and (max-width: 991px){
 /* SLIDER TABLET VERSION */
 @media screen and (min-width:768px) 
 and (max-width: 991px){
-    .prev, .next{
-        display: none;
-    }
+
+    .title_slider h2{
+        margin-top: 120px; 
+        margin-bottom: 30px;
+        font-size: 35px;
+     }
+ 
+     .title_slider p{
+         margin-bottom: 80px;
+         font-size: 23px;
+         font-weight: 500;
+     }
+ 
+     .slider h3{
+         font-size: 21px;
+         margin-bottom: 100px;
+     }
 }
 /* /SLIDER TABLET VERSION */
 
@@ -501,7 +528,7 @@ and (max-width: 991px){
     }
 
     .title_slider h2{
-       margin-top: 120px; 
+       margin-top: 20px; 
        margin-bottom: 30px;
        font-size: 40px;
     }
@@ -555,6 +582,20 @@ and (max-width: 991px){
     text-decoration: none;
     color: rgba(9, 111, 255, 1);
 }
+
+/* FEATURES TABLET VERSION */
+@media screen and (min-width:768px) 
+and (max-width: 991px){
+
+    .features h4{
+        font-size: 20px;
+    }
+    .features p{
+        line-height: 20px;
+        font-size: 15px;
+    }
+}
+/* /FEATURES TABLET VERSION */
 /* /FEATURES */
 
 /* 12 REGIONS */
@@ -599,6 +640,22 @@ and (max-width: 991px){
 .travel:last-child{
     border-bottom: none;
 }
+
+
+/* 12 REGIONS TABLET VERSION */
+@media screen and (min-width:768px) 
+and (max-width: 991px){
+
+}
+/* /12 REGIONS TABLET VERSION */
+
+/* 12 REGIONS SMARTPHONE VERSION */
+@media screen and (max-width:767px){
+    .regions h2{
+        font-size: 29px;
+    }
+}
+/* /12 REGIONS SMARTPHONE VERSION */
 /* /12 REGIONS */
 
 /* SECOND SLIDER */
@@ -697,6 +754,15 @@ and (max-width: 991px){
 @media screen and (max-width:767px){
     .prev_second, .next_second{
         display: none;
+    }
+
+    .title_second_slider h2{
+        font-size: 35px;
+    }
+
+    .img_second_slider p{
+        font-size: 17px;
+        margin-bottom: 15px;
     }
 }
 /* /SECOND SECOND SLIDER */
@@ -853,4 +919,27 @@ footer{
     border-left-color: rgba(203, 214, 226, 1);
     z-index: 0;
 }
+
+/* FOOTER TABLET VERSION */
+@media screen and (min-width:768px) 
+and (max-width: 991px){
+    .footer_list{
+        margin-top: 10px; 
+        padding-left: 0;
+    }
+}
+/* /FOOTER TABLET VERSION */
+
+/* FOOTER SMARTPHONE VERSION */
+@media screen and (max-width:767px){
+    .footer_list{
+        margin-top: 10px; 
+        padding-left: 0;
+    }
+
+    .list{
+        margin-bottom: 15px;
+    }
+}
+/* /FOOTER SMARTPHONE VERSION */
 /* FOOTER */
