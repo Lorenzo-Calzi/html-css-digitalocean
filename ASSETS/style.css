@@ -11,62 +11,63 @@ body{
 }
 
 .container{
-    width: 75%;
+    max-width: 75%;
     margin: auto;
 }
 
 .cursor{
     cursor: pointer;
 }
+
 /* /GENERAL RULES */
 
-nav{
+
+.navbar{
+    display: flex;
+    align-items: center;
     padding-top: 10px;
     margin-bottom: 5px;
 }
 
-.left_nav{
-    width: 25%;
-    display: flex;
-    align-items: center;
-}
 
-.left_nav span{
+.navbar h1{
     color: rgba(42, 137, 253, 1);
     font-size: 20px;
     margin-left: 4px;
 }
-.left_nav img{
+
+.navbar_left img{
     height: 30px;
 }
 
-.center_nav{
-    width: 45%;
+
+
+.navbar_center{
+    display: flex;
+    flex-grow: 1;
 }
 
-.right_nav{
+.navbar_right{
+    display: flex;
+    flex-grow: 1;
     justify-content: flex-end;
-    width: 30%;
 }
 
-.menu{
-    display: none;
+.navbar h1{
+    display: flex;
+    flex-grow: 1;
 }
 
-.blue_text{
-    color: rgba(31, 53, 96, 1);
-    font-size: 15px;
-    font-weight: 600;
-}
-
-ul{
+.navbar_center ul, .navbar_right ul{
     list-style: none;
     display: flex;
 }
-ul>li{
+
+.navbar_center ul>li, .navbar_right ul>li{
     margin: 10px;
 }
-ul>li>a{
+
+.navbar_center ul>li>a, .navbar_right ul>li>a{
     color: rgba(75, 150, 255, 1);
     text-decoration: none;
     border: 1px solid rgba(75, 150, 255, 1);
@@ -75,6 +76,16 @@ ul>li>a{
 }
 .fa-chevron-down:before {
     padding: 5px;
+}
+
+.blue_text{
+    color: rgba(31, 53, 96, 1);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.menu{
+    display: none;
 }
 
 /* BANNER */
@@ -219,13 +230,14 @@ and (max-width: 991px){
         display: block;
     }
 
-    .center_nav, .right_nav{
+    .navbar_center, .navbar_right{
         display: none;
     }
 
     .col_lg_6 h1{
         font-size: 32px;
     }
+
 }
 /* /HEADER TABLET VERSION */
 
@@ -235,9 +247,10 @@ and (max-width: 991px){
         display: block; /* da sistemare */
     }
 
-    .center_nav, .right_nav{
+    .navbar_center, .navbar_right{
         display: none;
     }
+
     .title h1{
         font-size: 40px;
     }
@@ -334,11 +347,6 @@ and (max-width: 991px){
     font-size: 23px;
 }
 
-.three_columns{
-    height: 550px;/* Chiedere e rimuovere questo */
-    /* background-color: red; */
-}
-
 .three_columns_list{
     width: 30%;
     margin: auto;
@@ -352,6 +360,8 @@ and (max-width: 991px){
 .three_columns .col_lg_4 ul li{
     color: rgba(119, 130, 155, 1);
     line-height: 30px;
+    list-style: none;
+    padding-left: 5px;
 }
 
 .three_columns .col_lg_4 img{
@@ -401,9 +411,8 @@ and (max-width: 991px){
 /* SLIDER */
 .slider{
     width: 100%;
-    background-color: red;
-    /* background-color: rgba(243, 245, 249, 1); */
-    padding-top: 60px;
+    background-color: rgba(243, 245, 249, 1);
+    padding-top: 100px;
     padding-bottom: 80px;
 }
 
@@ -514,10 +523,13 @@ and (max-width: 991px){
 /* FEATURES */
 .features{
     width: 100%;
-    height: 300px; /* da togliere */
 }
 
-.features h1{
+.features_left, .features_center, .features_right{
+    margin-bottom: 70px;
+}
+
+.row .features h1{
     text-align: center;
     color: rgba(3, 28, 78, 1);
     margin-bottom: 30px;
@@ -547,9 +559,10 @@ and (max-width: 991px){
 
 /* 12 REGIONS */
 .regions{
-    height: 400px; /* Da rimuovere */
     width: 100%;
     background: linear-gradient(180deg, #0045C3 0%, #00219D 100%);
+    padding-top: 40px;
+    padding-bottom: 50px;
 }
 
 .regions h2{
@@ -721,9 +734,9 @@ and (max-width: 991px){
 /* FOOTER */
 footer{
     width: 100%;
-    height: 480px;  /* Da rimuovere */ 
     background-color: rgba(3, 28, 78, 1);
     position: relative;
+    padding-bottom: 50px;
 }
 
 .footer_logo{
@@ -772,6 +785,7 @@ footer{
 .list ul li{
     color: rgba(142, 152, 172, 1);
     cursor: pointer;
+    margin-bottom: 5px;
 }
 
 .bot{
@@ -840,4 +854,3 @@ footer{
     z-index: 0;
 }
 /* FOOTER */
-
