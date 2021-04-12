@@ -930,6 +930,14 @@ and (max-width: 991px){
         margin-top: 10px; 
         padding-left: 0;
     }
+    .bot{
+        justify-content: flex-start;
+        margin-left: 110px;
+        margin-top: 20px;
+    }
+    .bot p{
+        width: 40%;
+    }
 }
 /* /FOOTER TABLET VERSION */
 
@@ -941,6 +949,14 @@ and (max-width: 991px){
     }
     .list{
         margin-bottom: 15px;
+    }
+    .bot{
+        justify-content: flex-start;
+        margin-left: 90px;
+        margin-top: 10px;
+    }
+    .bot p{
+        width: 50%;
     }
 }
 /* /FOOTER SMARTPHONE VERSION */
