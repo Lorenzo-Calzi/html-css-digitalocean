@@ -16,24 +16,24 @@
         <div class="container">
 
             <!-- NAVBAR -->
-            <nav class="row nav">
+            <nav class="row">
 
                 <!-- PRIMA PARTE NAV -->
                 <div class="col_lg_4 left_nav blue_text">
-                    <div>
+                    <div class="cursor">
                         <img src="./img/logo-small.svg" alt="logo digital ocean">
                     </div>
-                    <span>DigitalOcean</span>
+                    <span class="cursor">DigitalOcean</span>
                 </div> 
                 <!-- /PRIMA PARTE NAV --> 
 
                 <!-- SECONDA PARTE NAV -->
                 <div class="col_lg_4 center_nav blue_text">
                     <ul>
-                        <li>Product<i class="fas fa-chevron-down"></i></li>
-                        <li>Customers</li>
-                        <li>Community<i class="fas fa-chevron-down"></i></li>
-                        <li>Pricing</li>
+                        <li class="cursor">Product<i class="fas fa-chevron-down"></i></li>
+                        <li class="cursor">Customers</li>
+                        <li class="cursor">Community<i class="fas fa-chevron-down"></i></li>
+                        <li class="cursor">Pricing</li>
                     </ul>
                 </div>
                 <!-- /SECONDA PARTE NAV -->
@@ -41,14 +41,14 @@
                 <!-- TERZA PARTE NAV -->
                 <div class="col_lg_4 right_nav blue_text">
                     <ul>
-                        <li>Docs</li>
-                        <li>Support<i class="fas fa-chevron-down"></i></li>
-                        <li>Login</li>
+                        <li class="cursor">Docs</li>
+                        <li class="cursor">Support<i class="fas fa-chevron-down"></i></li>
+                        <li class="cursor">Login</li>
                         <li>
                             <a href="#">Sign Up</a>
                         </li>
                     </ul>
-                    <div class="menu">
+                    <div class="menu" class="cursor">
                         <i class="fas fa-bars"></i>
                     </div>
                 </div>
@@ -83,13 +83,13 @@
                                 <h2> Deploy your app in seconds. </h2>
                                 <h2> Get started now. </h2>
                             </div>
-                            <span> Email </span>
-                            <span> Password </span>
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
                             <div class="button_blue">
                                 <a href="#">Create your account</a>  
                             </div>
                             <div class="button_white clearfix">
-                                <div class="button_white_left">
+                                <div class="button_white_left cursor">
                                     <img src="./img/google-icon.png" alt="">
                                 </div>
                                     
@@ -122,22 +122,22 @@
                     Innovate Businesses trust digitalocean
                 </h5> 
                 <div class="logos col_lg_12 col_md_12">
-                    <div class="col_lg_2 col_md_2 col_xs_6">
+                    <div class="">
                         <img src="./img/docker.svg" alt="logo Docker">
                     </div>
-                    <div class="col_lg_2 col_md_2 col_xs_6">
+                    <div class="">
                         <img src="./img/gitlab.svg" alt="logo GitLab">
                     </div>
-                    <div class="col_lg_2 col_md_2 col_xs_6">
+                    <div class="">
                         <img src="./img/slack.svg" alt="logo slack">
                     </div>
-                    <div class="col_lg_2 col_md_2 col_xs_6">
+                    <div class="">
                         <img src="./img/hashicorp.svg" alt="logo HashiCorp">
                     </div>
-                    <div class="col_lg_2 col_md_2 col_xs_6">
+                    <div class="">
                         <img src="./img/wework.svg" alt="logo HashiCorp">
                     </div>
-                    <div class="col_lg_2 col_md_2 col_xs_6">
+                    <div class="">
                         <img src="./img/splunk.svg" alt="logo Splunk">
                     </div>      
                 </div>
@@ -148,8 +148,7 @@
         </div>
         <!-- /LOGHI -->
     
-        <!-- TRE COLONNE -->
-        <div class="container">
+        <!-- TRE COLONNE --><div class="container">
             <div class="title_three_columns col_lg_12 col_md_12 col_xs_12">
                 <h2>
                     Deploy and scale seamlessly
@@ -160,16 +159,19 @@
             </div>
     
             <div class="three_columns">
-                <div class="col_lg_4 col_md_4 col_xs_12">
-                    <ul>
-                        <li>Deploy</li>
-                        <li>Manage</li>
-                        <li>Secure</li>
-                        <li>Scale</li>
-                        <li>Monitor</li>
-                    </ul>
+                <div class="col_lg_4 col_md_4">
+                    <div class="three_columns_list">
+                        <ul>
+                            <li>Deploy</li>
+                            <li>Manage</li>
+                            <li>Secure</li>
+                            <li>Scale</li>
+                            <li>Monitor</li>
+                        </ul>
+                    </div>
+                    
                 </div>
-                <div class="col_lg_4 col_md_4 col_xs_12"> 
+                <div class="col_lg_4 col_md_4"> 
                     <div>
                         <img src="./img/cluster-deploy.svg" alt="logo cluster deploy">
                         <h5>
@@ -189,7 +191,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col_lg_4 col_md_4 col_xs_12">
+                <div class="col_lg_4 col_md_4">
                     <div>
                         <img src="./img/optimized-compute.svg" alt="logo optimized-compute">
                         <h5>
@@ -216,7 +218,7 @@
         <!-- SLIDER -->
         <div class="slider">
             <div class="container">
-                <div class="title_slider col_lg_12">
+                <div class="title_slider col_lg_12 col_md_12">
                     <h2>
                         Designed for developers
                     </h2>
@@ -225,11 +227,11 @@
                     </p>
                 </div>
                 <div class="img_slider">
-                    <div class="prev">
+                    <div class="prev cursor">
                         <i class="fas fa-angle-left"></i>
                     </div>
                     <img src="./img/slide.jpg" alt="">
-                    <div class="next">
+                    <div class="next cursor">
                         <i class="fas fa-angle-right"></i>
                     </div>
                 </div>
@@ -278,67 +280,67 @@
             <div class="container">
                 <h2>Service your customers around the world from 12 regions.</h2>
                 <div class="regions_left col_lg_6">
-                    <div class="travel">
-                        <div class="codice col_lg_1 col_xs_12">AMS2</div>
-                        <div class="city col_lg_5 col_lg_offset_2 col_xs_12">Amsterdam, Netherlands</div>
-                        <div class="speed col_lg_3 col_lg_offset_1 col_xs_12"><a href="#">Test Speed ></a></div>
+                    <div class="travel col_md_12 col_xs_12">
+                        <div class="codice">AMS2</div>
+                        <div class="city">Amsterdam, Netherlands</div>
+                        <div class="speed"><a href="#">Test Speed ></a></div>
                     </div>
-                    <div class="travel">
-                        <div class="codice col_lg_1 col_xs_12">AMS3</div>
-                        <div class="city col_lg_5 col_lg_offset_2 col_xs_12">Amsterdam, Netherlands</div>
-                        <div class="speed col_lg_3 col_lg_offset_1 col_xs_12"><a href="#">Test Speed ></a></div>
+                    <div class="travel col_md_12 col_xs_12">
+                        <div class="codice">AMS3</div>
+                        <div class="city">Amsterdam, Netherlands</div>
+                        <div class="speed"><a href="#">Test Speed ></a></div>
                     </div>
-                    <div class="travel">
-                        <div class="codice col_lg_1 col_xs_12">BLR1</div>
-                        <div class="city col_lg_5 col_lg_offset_2 col_xs_12">Bangalore, India</div>
-                        <div class="speed col_lg_3 col_lg_offset_1 col_xs_12"><a href="#">Test Speed ></a></div>
+                    <div class="travel col_md_12 col_xs_12">
+                        <div class="codice">BLR1</div>
+                        <div class="city">Bangalore, India</div>
+                        <div class="speed"><a href="#">Test Speed ></a></div>
                     </div>
-                    <div class="travel">
-                        <div class="codice col_lg_1 col_xs_12">FRA1</div>
-                        <div class="city col_lg_5 col_lg_offset_2 col_xs_12">Frankfurt, German</div>
-                        <div class="speed col_lg_3 col_lg_offset_1 col_xs_12"><a href="#">Test Speed ></a></div>
+                    <div class="travel col_md_12 col_xs_12">
+                        <div class="codice ">FRA1</div>
+                        <div class="city ">Frankfurt, German</div>
+                        <div class="speed"><a href="#">Test Speed ></a></div>
                     </div>
-                    <div class="travel">
-                        <div class="codice col_lg_1 col_xs_12">LON1</div>
-                        <div class="city col_lg_5 col_lg_offset_2 col_xs_12">London, UK</div>
-                        <div class="speed col_lg_3 col_lg_offset_1 col_xs_12"><a href="#">Test Speed ></a></div>
+                    <div class="travel col_md_12 col_xs_12">
+                        <div class="codice ">LON1</div>
+                        <div class="city ">London, UK</div>
+                        <div class="speed"><a href="#">Test Speed ></a></div>
                     </div>
-                    <div class="travel">
-                        <div class="codice col_lg_1 col_xs_12">NYC1</div>
-                        <div class="city col_lg_5 col_lg_offset_2 col_xs_12">New York, USA</div>
-                        <div class="speed col_lg_3 col_lg_offset_1 col_xs_12"><a href="#">Test Speed ></a></div>
+                    <div class="travel col_md_12 col_xs_12">
+                        <div class="codice ">NYC1</div>
+                        <div class="city ">New York, USA</div>
+                        <div class="speed"><a href="#">Test Speed ></a></div>
                     </div>
                 </div>
                 <div class="regions_right col_lg_6">
-                    <div class="travel">
-                        <div class="codice col_lg_1 col_xs_12">AMS2</div>
-                        <div class="city col_lg_5 col_lg_offset_2 col_xs_12">Amsterdam, Netherlands</div>
-                        <div class="speed col_lg_3 col_lg_offset_1 col_xs_12"><a href="#">Test Speed ></a></div>
+                    <div class="travel col_md_12 col_xs_12">
+                        <div class="codice ">AMS2</div>
+                        <div class="city ">Amsterdam, Netherlands</div>
+                        <div class="speed"><a href="#">Test Speed ></a></div>
                     </div>
-                    <div class="travel">
-                        <div class="codice col_lg_1 col_xs_12">AMS3</div>
-                        <div class="city col_lg_5 col_lg_offset_2 col_xs_12">Amsterdam, Netherlands</div>
-                        <div class="speed col_lg_3 col_lg_offset_1 col_xs_12"><a href="#">Test Speed ></a></div>
+                    <div class="travel col_md_12 col_xs_12">
+                        <div class="codice ">AMS3</div>
+                        <div class="city ">Amsterdam, Netherlands</div>
+                        <div class="speed"><a href="#">Test Speed ></a></div>
                     </div>
-                    <div class="travel">
-                        <div class="codice col_lg_1 col_xs_12">BLR1</div>
-                        <div class="city col_lg_5 col_lg_offset_2 col_xs_12">Bangalore, India</div>
-                        <div class="speed col_lg_3 col_lg_offset_1 col_xs_12"><a href="#">Test Speed ></a></div>
+                    <div class="travel col_md_12 col_xs_12">
+                        <div class="codice ">BLR1</div>
+                        <div class="city ">Bangalore, India</div>
+                        <div class="speed"><a href="#">Test Speed ></a></div>
                     </div>
-                    <div class="travel">
-                        <div class="codice col_lg_1 col_xs_12">FRA1</div>
-                        <div class="city col_lg_5 col_lg_offset_2 col_xs_12">Frankfurt, German</div>
-                        <div class="speed col_lg_3 col_lg_offset_1 col_xs_12"><a href="#">Test Speed ></a></div>
+                    <div class="travel col_md_12 col_xs_12">
+                        <div class="codice ">FRA1</div>
+                        <div class="city ">Frankfurt, German</div>
+                        <div class="speed"><a href="#">Test Speed ></a></div>
                     </div>
-                    <div class="travel">
-                        <div class="codice col_lg_1 col_xs_12">LON1</div>
-                        <div class="city col_lg_5 col_lg_offset_2 col_xs_12">London, UK</div>
-                        <div class="speed col_lg_3 col_lg_offset_1 col_xs_12"><a href="#">Test Speed ></a></div>
+                    <div class="travel col_md_12 col_xs_12">
+                        <div class="codice ">LON1</div>
+                        <div class="city ">London, UK</div>
+                        <div class="speed"><a href="#">Test Speed ></a></div>
                     </div>
-                    <div class="travel">
-                        <div class="codice col_lg_1 col_xs_12">NYC1</div>
-                        <div class="city col_lg_5 col_lg_offset_2 col_xs_12">New York, USA</div>
-                        <div class="speed col_lg_3 col_lg_offset_1 col_xs_12"><a href="#">Test Speed ></a></div>
+                    <div class="travel col_md_12 col_xs_12">
+                        <div class="codice ">NYC1</div>
+                        <div class="city ">New York, USA</div>
+                        <div class="speed"><a href="#">Test Speed ></a></div>
                     </div>
                 </div>
             </div>
@@ -347,14 +349,14 @@
     
         <!-- SECOND SLIDER -->
         <div class="background_slider">
-            <div class="title_second_slider col_lg_12">
+            <div class="title_second_slider col_lg_12 col_md_12 col_xs_12">
                 <h2>
                     Development teams love DigitalOcean
                 </h2>
             </div>
     
             <div class="second_slider">
-                <div class="prev_second">
+                <div class="prev_second cursor">
                     <i class="fas fa-angle-left"></i>
                 </div>
         
@@ -370,7 +372,7 @@
                     <a href="#">Read story ></a>
                 </div>
         
-                <div class="next_second">
+                <div class="next_second cursor">
                     <i class="fas fa-angle-right"></i>
                 </div>
     
@@ -411,7 +413,7 @@
                 </div>
             </div>
             <div class="footer_list col_lg_8">
-                <div class="list col_lg_3">
+                <div class="list col_lg_3 col_md_6 col_xs_12">
                     <ul>
                         <li>Company</li>
                         <li>About</li>
@@ -426,7 +428,7 @@
                         <li>Legal & Security</li>
                     </ul>
                 </div>
-                <div class="list col_lg_3">
+                <div class="list col_lg_3 col_md_6 col_xs_12">
                     <ul>
                         <li>Products</li>
                         <li>Droplets</li>
@@ -442,7 +444,7 @@
                         <li>Release Notes</li>
                     </ul>
                 </div>
-                <div class="list col_lg_3">
+                <div class="list col_lg_3 col_md_6 col_xs_12">
                     <ul>
                         <li>Community</li>
                         <li>Tutorials</li>
@@ -457,7 +459,7 @@
                         <li>Open Source</li>
                     </ul>
                 </div>
-                <div class="list col_lg_3">
+                <div class="list col_lg_3 col_md_6 col_xs_12">
                     <ul>
                         <li>Support</li>
                         <li>Contact support</li>
